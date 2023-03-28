@@ -1,0 +1,787 @@
+[
+    {
+        "key": "group_63edf39de3643",
+        "title": "Real Estate Details",
+        "fields": [
+            {
+                "key": "field_4",
+                "label": "Availability",
+                "name": "availability",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "for_sale": "For Sale",
+                    "for_rent": "For Rent",
+                    "sale_pending": "Sale Pending",
+                    "recently_sold": "Recently Sold",
+                    "off_market": "Off Market",
+                    "available_soon": "Available Soon"
+                },
+                "default_value": false,
+                "return_format": "array",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5",
+                "label": "Address",
+                "name": "address",
+                "aria-label": "",
+                "type": "group",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "sub_fields": [
+                    {
+                        "key": "field_5a",
+                        "label": "Address",
+                        "name": "addr",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_5b",
+                        "label": "City",
+                        "name": "city",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_5c",
+                        "label": "Region",
+                        "name": "region",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_5d",
+                        "label": "Country",
+                        "name": "country",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_5e",
+                        "label": "Postal Code",
+                        "name": "postal_code",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    }
+                ],
+                "layout": "block"
+            },
+            {
+                "key": "field_6",
+                "label": "Latitude",
+                "name": "latitude",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_7",
+                "label": "Longitude",
+                "name": "longitude",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_8",
+                "label": "Neighborhood",
+                "name": "neighborhood",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": 0,
+                "max": 0,
+                "rows_per_page": 20,
+                "layout": "table",
+                "button_label": "Satır ekle",
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_8a",
+                        "label": "Neighborhood Name",
+                        "name": "neighborhood_name",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_8"
+                    }
+                ]
+            },
+            {
+                "key": "field_15",
+                "label": "Number of Rooms",
+                "name": "num_rooms",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_13",
+                "label": "Number of Bedrooms",
+                "name": "num_beds",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_14",
+                "label": "Number of Bathrooms",
+                "name": "num_baths",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_16",
+                "label": "Property Type",
+                "name": "property_type",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "apartment": "Apartment",
+                    "builder_floor": "Builder Floor",
+                    "condo": "Condo",
+                    "house": "House",
+                    "house_in_condominium": "House in Condominium",
+                    "house_in_villa": "House in Villa",
+                    "loft": "Loft",
+                    "penthouse": "Penthouse",
+                    "studio": "Studio",
+                    "townhouse": "Townhouse",
+                    "other": "Other"
+                },
+                "default_value": false,
+                "return_format": "label",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_17",
+                "label": "Listing Type",
+                "name": "listing_type",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "for_rent_by_agent": "For Rent by Agent",
+                    "for_rent_by_owner": "For Rent by Owner",
+                    "for_sale_by_agent": "For Sale by Agent",
+                    "for_sale_by_owner": "For Sale by Owner",
+                    "foreclosed": "Foreclosed",
+                    "new_construction": "New Construction",
+                    "new_listing": "New Listing"
+                },
+                "default_value": false,
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_18",
+                "label": "Area Size",
+                "name": "area_size",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_19",
+                "label": "Area Unit",
+                "name": "area_unit",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "sq_ft": "Square Feet",
+                    "sq_m": "Square Meters"
+                },
+                "default_value": false,
+                "return_format": "label",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_20",
+                "label": "Air Conditioning Type",
+                "name": "ac_type",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "central": "Central",
+                    "other": "Other",
+                    "none": "None"
+                },
+                "default_value": false,
+                "return_format": "label",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_21",
+                "label": "Furnish Type",
+                "name": "furnish_type",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "furnished": "Furnished",
+                    "semi_furnished": "Semi-Furnished",
+                    "unfurnished": "Unfurnished"
+                },
+                "default_value": false,
+                "return_format": "label",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_22",
+                "label": "Heating Type",
+                "name": "heating_type",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "central": "Central",
+                    "gas": "Gas",
+                    "electric": "Electric",
+                    "radiator": "Radiator",
+                    "other": "Other",
+                    "none": "None"
+                },
+                "default_value": [],
+                "return_format": "label",
+                "multiple": 1,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_23",
+                "label": "Laundry Type",
+                "name": "laundry_type",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "in_unit": "In Unit",
+                    "in_building": "In Building",
+                    "other": "Other",
+                    "none": "None"
+                },
+                "multiple": 0,
+                "allow_null": 0,
+                "default_value": false,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value"
+            },
+            {
+                "key": "field_24",
+                "label": "Number of Units",
+                "name": "num_units",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_25",
+                "label": "Parking Type",
+                "name": "parking_type",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "garage": "Garage",
+                    "street": "Street",
+                    "off_street": "Off-Street",
+                    "other": "Other",
+                    "none": "None"
+                },
+                "default_value": false,
+                "return_format": "label",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_26",
+                "label": "Partner Verification",
+                "name": "partner_verification",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "verified": "Verified",
+                    "none": "None"
+                },
+                "default_value": false,
+                "return_format": "value",
+                "multiple": 0,
+                "allow_null": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_27",
+                "label": "Year Built",
+                "name": "year_built",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "YYYY",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_28",
+                "label": "Pet Policy",
+                "name": "pet_policy",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "cat": "Cat",
+                    "dog": "Dog",
+                    "all": "All",
+                    "none": "None"
+                },
+                "multiple": 0,
+                "allow_null": 0,
+                "default_value": false,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value"
+            },
+            {
+                "key": "field_29",
+                "label": "Available Dates Price Config",
+                "name": "available_dates_price_config",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": 0,
+                "max": 0,
+                "rows_per_page": 20,
+                "layout": "table",
+                "button_label": "Satır ekle",
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_29a",
+                        "label": "Available Date",
+                        "name": "available_date",
+                        "aria-label": "",
+                        "type": "date_picker",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "d\/m\/Y",
+                        "return_format": "d\/m\/Y",
+                        "first_day": 1,
+                        "parent_repeater": "field_29"
+                    },
+                    {
+                        "key": "field_29b",
+                        "label": "Price",
+                        "name": "price",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": false,
+                        "conditional_logic": false,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_29"
+                    }
+                ]
+            },
+            {
+                "key": "field_30",
+                "label": "App Link",
+                "name": "applink",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_31",
+                "label": "Status",
+                "name": "status",
+                "aria-label": "",
+                "type": "select",
+                "instructions": "",
+                "required": false,
+                "conditional_logic": false,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "active": "Active",
+                    "archived": "Archived"
+                },
+                "multiple": 0,
+                "allow_null": 0,
+                "default_value": false,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "product"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 1
+    }
+]
